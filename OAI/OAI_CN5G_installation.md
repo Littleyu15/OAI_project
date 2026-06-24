@@ -3,7 +3,7 @@
 > [NR_SA_Tutorial_OAI_CN5G](https://gitlab.eurecom.fr/oai/openairinterface5g/-/blob/develop/doc/NR_SA_Tutorial_OAI_CN5G.md#2-oai-cn5g)
 
 # Table Of Content
-- [Scenario](#)
+- [Scenario](#scenario)
 - [Step](#oai-cn5g-pre-requisites)
 
 
