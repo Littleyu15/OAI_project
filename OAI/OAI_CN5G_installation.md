@@ -1,6 +1,6 @@
 # OAI_CN5G_installation
 > Refrence :
-> [NR_SA_Tutorial_OAI_CN5G](https://gitlab.eurecom.fr/oai/openairinterface5g/-/blob/develop/doc/NR_SA_Tutorial_OAI_CN5G.md)
+> [NR_SA_Tutorial_OAI_CN5G](https://gitlab.eurecom.fr/oai/openairinterface5g/-/blob/develop/doc/NR_SA_Tutorial_OAI_CN5G.md#1-scenario)
 
 # Table Of Content
 - [Step](#oai-cn5g-pre-requisites)
