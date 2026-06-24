@@ -12,7 +12,11 @@ OAI_project/
 │   └── 2026_06.md
 │   └── 2026_07.md
 │
-└── issues/
+└── OAI/
+	└── OAI_5G_NR_SA_tutorial_with_OAI_nrU
+	└── OAI_CN5G_installation
+	└── jamming_attacker_tutorial.md
+
 
 ```
 			
@@ -53,3 +57,17 @@ OAI_project/
 
 ### 完成標準
 可以每日做了哪些工作項目。
+
+## 3️⃣`OAI/`
+
+### 目的
+紀錄驗證Richard實驗
+
+### 應該包含
+- 安裝流程
+- 驗證流程
+- 測試結果
+- 原理特性介紹
+
+### 完成標準
+能跑出與Richard論文相對應的結果，以及能夠理解原理特性
