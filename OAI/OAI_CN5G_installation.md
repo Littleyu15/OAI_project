@@ -66,7 +66,7 @@ You may encounter a 502 Bad Gateway error; please try again.
 > ### Output
 > <img width="323" height="244" alt="image" src="https://github.com/user-attachments/assets/3ec19d6e-b062-444f-b457-4900373168d2" />
 
-### Check they are healthy
+### Check whether the containers are healthy
 > ```
 > watch -n 1 docker compose -f docker-compose.yaml ps -a
 > ```
@@ -74,6 +74,7 @@ You may encounter a 502 Bad Gateway error; please try again.
 > <img width="1325" height="234" alt="image" src="https://github.com/user-attachments/assets/58cb13b7-7a45-4e72-b969-b4b74e4017aa" />
 
 ### Stop OAI CN5G
+(Make sure to shut it down when you’re done, otherwise the containers will be left running.)
 > ```
 > cd ~/oai-cn5g
 > docker compose down
