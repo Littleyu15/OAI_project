@@ -13,10 +13,14 @@ OAI_project/
 │   └── 2026_07.md
 │
 └── OAI/
-	└── OAI_5G_NR_SA_tutorial_with_OAI_nrU
-	└── OAI_CN5G_installation
-	└── jamming_attacker_tutorial.md
-
+	└── config
+		└── OAI_5G_NR_SA_tutorial_with_OAI_nrU.md
+		└── OAI_CN5G_installation.md
+	└── Experiments/	
+		└── jamming_attacker_tutorial.md
+		└── HTC_attack.md
+	└── Background knowledge
+		└── DURANRA_vs_O-CU-DU.md
 
 ```
 			
@@ -61,7 +65,7 @@ OAI_project/
 ## 3️⃣`OAI/`
 
 ### 目的
-紀錄驗證Richard實驗
+紀錄Richard實驗驗證、OAI相關背景知識、HTC attack記錄
 
 ### 應該包含
 - 安裝流程
