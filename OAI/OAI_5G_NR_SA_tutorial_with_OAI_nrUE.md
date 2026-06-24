@@ -59,4 +59,48 @@ Minimum hardware requirements :
 > ./build_oai -w USRP --ninja --nrUE --gNB --build-lib "nrscope" -C
 > ```
 
-### Run OAI CN5G and OAI gNB
+## Run OAI CN5G and OAI gNB
+we need three terminal to run E2E
+
+### Run OAI CN5G
+> ```
+> # first terminal 
+> cd ~/oai-cn5g
+> docker compose up -d
+> 
+> # Check whether the containers are healthy
+> watch -n 1 docker compose -f docker-compose.yaml ps -a
+> ```
+
+
+###  Run OAI gNB
+> Refrence : https://gitlab.eurecom.fr/oai/openairinterface5g/-/blob/develop/doc/NR_SA_Tutorial_OAI_nrUE.md?ref_type=heads#42-run-oai-gnb
+> ```
+> # second terminal
+> # RFsim mode 
+> cd ~/openairinterface5g/cmake_targets/ran_build/build
+> sudo ./nr-softmodem -O ../../../targets/PROJECTS/GENERIC-NR-5GC/CONF/gnb.sa.band78.fr1.106PRB.usrpb210.conf --gNBs.[0].min_rxtxtime 6 --rfsim
+> ```
+> ### Output
+> <img width="658" height="488" alt="image" src="https://github.com/user-attachments/assets/63886583-b26d-4cf4-871e-fcbfa76e3cfd" />
+
+
+### Run OAI nrUE
+> Refrence : https://gitlab.eurecom.fr/oai/openairinterface5g/-/blob/develop/doc/NR_SA_Tutorial_OAI_nrUE.md?ref_type=heads#51-run-oai-nrue
+> ```
+> # third terminal
+> # RFsim mode
+> cd ~/openairinterface5g/cmake_targets/ran_build/build
+> sudo ./nr-uesoftmodem -r 106 --numerology 1 --band 78 -C 3619200000 --uicc0.imsi 001010000000001 --rfsim --rfsimulator.serveraddr 127.0.0.1
+> ```
+> ### Output
+> <img width="702" height="521" alt="image" src="https://github.com/user-attachments/assets/64aa0423-fd71-4acb-bc64-172a39cc1a2d" />
+
+### Check nrUE amf log 
+> ```
+> docker logs oai-amf --tail 50
+> ```
+> ### Output
+> <img width="1284" height="887" alt="image" src="https://github.com/user-attachments/assets/923cea64-3429-4f58-b752-c22d40ec1f06" />
+
+
