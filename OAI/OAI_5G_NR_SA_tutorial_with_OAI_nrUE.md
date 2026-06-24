@@ -62,7 +62,7 @@ Minimum hardware requirements :
 ## 4️⃣Run OAI CN5G and OAI gNB
 we need three terminal to run E2E
 
-### Run OAI CN5G
+### 4️-1️ Run OAI CN5G
 > ```
 > # first terminal 
 > cd ~/oai-cn5g
@@ -73,7 +73,7 @@ we need three terminal to run E2E
 > ```
 
 
-### 5️⃣Run OAI gNB
+### 4️-2️ Run OAI gNB
 > Refrence : https://gitlab.eurecom.fr/oai/openairinterface5g/-/blob/develop/doc/NR_SA_Tutorial_OAI_nrUE.md?ref_type=heads#42-run-oai-gnb
 > ```
 > # second terminal
@@ -85,7 +85,7 @@ we need three terminal to run E2E
 > <img width="658" height="488" alt="image" src="https://github.com/user-attachments/assets/63886583-b26d-4cf4-871e-fcbfa76e3cfd" />
 
 
-### 6️⃣Run OAI nrUE
+### 4️-3️ Run OAI nrUE
 > Refrence : https://gitlab.eurecom.fr/oai/openairinterface5g/-/blob/develop/doc/NR_SA_Tutorial_OAI_nrUE.md?ref_type=heads#51-run-oai-nrue
 > ```
 > # third terminal
@@ -96,7 +96,7 @@ we need three terminal to run E2E
 > ### Output
 > <img width="702" height="521" alt="image" src="https://github.com/user-attachments/assets/64aa0423-fd71-4acb-bc64-172a39cc1a2d" />
 
-### 7️⃣Check nrUE amf log 
+### 5️⃣Check nrUE amf log 
 > ```
 > docker logs oai-amf --tail 50
 > ```
