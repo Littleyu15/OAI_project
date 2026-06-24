@@ -90,6 +90,8 @@ we need three terminal to run E2E
 > ```
 > # third terminal
 > # RFsim mode
+> # The UE configuration must match the one of the network's AMF, so one can specify the nrUE configuration file adding address 127.0.0.1 behind --rfsim
+option.
 > cd ~/openairinterface5g/cmake_targets/ran_build/build
 > sudo ./nr-uesoftmodem -r 106 --numerology 1 --band 78 -C 3619200000 --uicc0.imsi 001010000000001 --rfsim --rfsimulator.serveraddr 127.0.0.1
 > ```
