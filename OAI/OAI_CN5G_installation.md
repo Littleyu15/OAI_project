@@ -13,13 +13,15 @@ Minimum hardware requirements :
   - Operating System: [Ubuntu 24.04 LTS](https://releases.ubuntu.com/noble/)
   - CPU: 8 cores x86_64 @ 3.5 GHz
   - RAM: 32 GB
-- Laptop for UE :
+- Laptop for **UE**:
   - Operating System: [Ubuntu 24.04 LTS](https://releases.ubuntu.com/noble/)
   - CPU: 8 cores x86_64 @ 3.5 GHz
   - RAM: 8 GB
  
   
-### OAI CN5G pre requisites
+### OAI CN5G pre requisites 
+
+(Install development、networking tools、Docker Engine、Docker Compose plugin)
 > ```
 > sudo apt install -y git net-tools putty
 > sudo apt update
@@ -39,7 +41,13 @@ Minimum hardware requirements :
 > ```
 
 ### Download and copy configuration files
-```
-wget -O ~/oai-cn5g.zip https://gitlab.eurecom.fr/oai/openairinterface5g/-/archive/develop/openairinterface5g-develop.zip?path=doc/tutorial_resources/oai-cn5g
 
-```
+You may encounter a 502 Bad Gateway error; please try again.
+> ```
+> wget -O ~/oai-cn5g.zip https://gitlab.eurecom.fr/oai/openairinterface5g/-/archive/develop/openairinterface5g-develop.zip?path=doc/tutorial_resources/oai-cn5g
+> unzip ~/oai-cn5g.zip
+> mv ~/openairinterface5g-develop-doc-tutorial_resources-oai-cn5g/doc/tutorial_resources/oai-cn5g ~/oai-cn5g
+> rm -r ~/openairinterface5g-develop-doc-tutorial_resources-oai-cn5g ~/oai-cn5g.zip
+> ```
+> ### Output
+> <img width="989" height="338" alt="image" src="https://github.com/user-attachments/assets/6252616a-0974-43a9-bb46-18d854f2c0f0" />
