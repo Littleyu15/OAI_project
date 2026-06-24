@@ -51,3 +51,33 @@ You may encounter a 502 Bad Gateway error; please try again.
 > ```
 > ### Output
 > <img width="989" height="338" alt="image" src="https://github.com/user-attachments/assets/6252616a-0974-43a9-bb46-18d854f2c0f0" />
+
+### Pull OAI CN5G docker images
+> ```
+> cd ~/oai-cn5g
+> docker compose pull
+> ```
+
+### Start OAI CN5G
+> ```
+> cd ~/oai-cn5g
+> docker compose up -d
+> ```
+> ### Output
+> <img width="323" height="244" alt="image" src="https://github.com/user-attachments/assets/3ec19d6e-b062-444f-b457-4900373168d2" />
+
+### Check they are healthy
+> ```
+> watch -n 1 docker compose -f docker-compose.yaml ps -a
+> ```
+> ### Output
+> <img width="1325" height="234" alt="image" src="https://github.com/user-attachments/assets/58cb13b7-7a45-4e72-b969-b4b74e4017aa" />
+
+### Stop OAI CN5G
+> ```
+> cd ~/oai-cn5g
+> docker compose down
+> ```
+> ### Output
+> <img width="332" height="255" alt="image" src="https://github.com/user-attachments/assets/d9a74a67-e950-45e0-893d-abd7e05f6100" />
+
