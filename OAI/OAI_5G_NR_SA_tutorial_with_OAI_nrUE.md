@@ -4,7 +4,8 @@
 # Table Of Content 
 - [Scenario](#scenario)
 - [Step](#oai-cn5g-setup)
-- 
+
+  
 ### Scenario
 Minimum hardware requirements :
 - Laptop/Desktop/Server for **OAI CN5G** and **OAI gNB**
