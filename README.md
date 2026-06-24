@@ -13,13 +13,13 @@ OAI_project/
 │   └── 2026_07.md
 │
 └── OAI/
-	└── config
+	└── config/
 		└── OAI_5G_NR_SA_tutorial_with_OAI_nrU.md
 		└── OAI_CN5G_installation.md
 	└── Experiments/	
 		└── jamming_attacker_tutorial.md
 		└── HTC_attack.md
-	└── Background knowledge
+	└── Background knowledge/
 		└── DURANRA_vs_O-CU-DU.md
 
 ```
