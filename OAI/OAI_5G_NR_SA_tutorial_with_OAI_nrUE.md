@@ -6,7 +6,7 @@
 - [Step](#oai-cn5g-setup)
 
   
-### Scenario
+### 💻Scenario
 Minimum hardware requirements :
 - Laptop/Desktop/Server for **OAI CN5G** and **OAI gNB**
   - Operating System: [Ubuntu 24.04 LTS](https://releases.ubuntu.com/noble/)
