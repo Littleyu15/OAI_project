@@ -18,9 +18,9 @@ Minimum hardware requirements :
   - RAM: 8 GB
  
   
-### [OAI CN5G Setup](https://github.com/Littleyu15/OAI_project/blob/main/OAI/OAI_CN5G_installation.md#oai_cn5g_installation)
+### 1️⃣[OAI CN5G Setup](https://github.com/Littleyu15/OAI_project/blob/main/OAI/OAI_CN5G_installation.md#oai_cn5g_installation)
 
-### OAI gNB and OAI nrUE pre-requisites
+### 2️⃣OAI gNB and OAI nrUE pre-requisites
 (Build UHD from source)
 > ```
 > # https://files.ettus.com/manual/page_build_guide.html
@@ -40,7 +40,7 @@ Minimum hardware requirements :
 > sudo uhd_images_downloader
 > ```
 
-### Build OAI gNB and OAI nrUE
+### 3️⃣Build OAI gNB and OAI nrUE
 > ```
 > # Get openairinterface5g source code
 > git clone https://github.com/duranta-project/openairinterface5g.git ~/openairinterface5g
@@ -59,7 +59,7 @@ Minimum hardware requirements :
 > ./build_oai -w USRP --ninja --nrUE --gNB --build-lib "nrscope" -C
 > ```
 
-## Run OAI CN5G and OAI gNB
+## 4️⃣Run OAI CN5G and OAI gNB
 we need three terminal to run E2E
 
 ### Run OAI CN5G
@@ -73,7 +73,7 @@ we need three terminal to run E2E
 > ```
 
 
-###  Run OAI gNB
+### 5️⃣Run OAI gNB
 > Refrence : https://gitlab.eurecom.fr/oai/openairinterface5g/-/blob/develop/doc/NR_SA_Tutorial_OAI_nrUE.md?ref_type=heads#42-run-oai-gnb
 > ```
 > # second terminal
@@ -85,7 +85,7 @@ we need three terminal to run E2E
 > <img width="658" height="488" alt="image" src="https://github.com/user-attachments/assets/63886583-b26d-4cf4-871e-fcbfa76e3cfd" />
 
 
-### Run OAI nrUE
+### 6️⃣Run OAI nrUE
 > Refrence : https://gitlab.eurecom.fr/oai/openairinterface5g/-/blob/develop/doc/NR_SA_Tutorial_OAI_nrUE.md?ref_type=heads#51-run-oai-nrue
 > ```
 > # third terminal
@@ -96,7 +96,7 @@ we need three terminal to run E2E
 > ### Output
 > <img width="702" height="521" alt="image" src="https://github.com/user-attachments/assets/64aa0423-fd71-4acb-bc64-172a39cc1a2d" />
 
-### Check nrUE amf log 
+### 7️⃣Check nrUE amf log 
 > ```
 > docker logs oai-amf --tail 50
 > ```
