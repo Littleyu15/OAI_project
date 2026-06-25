@@ -1,6 +1,6 @@
 # OAI_project Schedule-and-Goal-Planning
 
-### After work reocrd the daily log (On own PC)
+### After work reocrd daily log (On own PC)
 ```
 cd C:\Users\kevin\auto-daily-log
 .\.venv\Scripts\Activate.ps1
