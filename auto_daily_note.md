@@ -3,7 +3,7 @@
 ## Table Of Content
 - [Step](#install)
 - [Rules](#rules)
-- [Holiday / Time-Replacement Policy](#holiday---time-replacement-policy)
+- [Holiday / Time-Replacement Policy](#holiday--time-replacement-policy)
 
 ### Make sure you install git
 [Download](https://git-scm.com/install/windows)
