@@ -1,3 +1,7 @@
+- [nrUE_log](https://github.com/Littleyu15/OAI_project/blob/main/OAI/Background%20knowledge/log/nrUE_log.txt)
+- [gNB_log](https://github.com/Littleyu15/OAI_project/blob/main/OAI/Background%20knowledge/log/gNB_log.txt)
+
+
 ### 控制平面 (Control Plane)
 | 標籤 | 功能 | LOG 訊息說明 |
 |---|---|---|
