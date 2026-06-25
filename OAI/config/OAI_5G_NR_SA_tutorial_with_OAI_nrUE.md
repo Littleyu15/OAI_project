@@ -112,7 +112,7 @@ we need three terminal to run E2E
 
 ### 5️⃣Check nrUE amf log 
 
-log
+[Log Description](https://github.com/Littleyu15/OAI_project/blob/main/OAI/Background%20knowledge/Log_description.md#table-of-content)
 
 > ```
 > docker logs oai-amf --tail 50
