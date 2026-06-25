@@ -64,7 +64,9 @@ we need three terminal to run E2E
 
 ### 4️-1️ Run OAI CN5G
 > ```
-> # first terminal 
+> # first terminal
+> # remember to shut it down when you're done
+> 
 > cd ~/oai-cn5g
 > docker compose up -d
 > 
@@ -99,6 +101,9 @@ we need three terminal to run E2E
 > <img width="702" height="521" alt="image" src="https://github.com/user-attachments/assets/64aa0423-fd71-4acb-bc64-172a39cc1a2d" />
 
 ### 5️⃣Check nrUE amf log 
+
+log
+
 > ```
 > docker logs oai-amf --tail 50
 > ```
