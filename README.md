@@ -1,4 +1,11 @@
 # OAI_project Schedule-and-Goal-Planning
+
+### After work reocrd the daily log (On own PC)
+```
+cd C:\Users\kevin\auto-daily-log
+.\.venv\Scripts\Activate.ps1
+python main.py --apply --today --ensure-comments --seed-from-commits
+```
 ### Schedule and Goal Planning
 ```
 OAI_project/
