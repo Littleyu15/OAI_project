@@ -59,10 +59,20 @@ Minimum hardware requirements :
 > ./build_oai -w USRP --ninja --nrUE --gNB --build-lib "nrscope" -C
 > ```
 
-## 4️⃣Run OAI CN5G and OAI gNB
+### 4️⃣Installation of dependencies and compilation(安裝相依套件與編譯)
+> ```
+> cd openairinterface5g
+> git checkout 2025.w46                        # tested tag
+> cd cmake_targets
+> ./build_oai --ninja -I                       # install dependencies
+> 
+> ./build_oai --ninja --gNB --nrUE -w SIMU -c  # compile gNB and nrUE 
+> ```
+
+## 5️⃣Run OAI CN5G and OAI gNB
 we need three terminal to run E2E
 
-### 4️-1️ Run OAI CN5G
+### 5️-1️ Run OAI CN5G
 > ```
 > # first terminal
 > # remember to shut it down when you're done
@@ -75,7 +85,7 @@ we need three terminal to run E2E
 > ```
 
 
-### 4️-2️ Run OAI gNB
+### 5️-2️ Run OAI gNB
 > Refrence : https://gitlab.eurecom.fr/oai/openairinterface5g/-/blob/develop/doc/NR_SA_Tutorial_OAI_nrUE.md?ref_type=heads#42-run-oai-gnb
 > ```
 > # second terminal
@@ -87,7 +97,7 @@ we need three terminal to run E2E
 > <img width="658" height="488" alt="image" src="https://github.com/user-attachments/assets/63886583-b26d-4cf4-871e-fcbfa76e3cfd" />
 
 
-### 4️-3️ Run OAI nrUE
+### 5️-3️ Run OAI nrUE
 > Refrence : https://gitlab.eurecom.fr/oai/openairinterface5g/-/blob/develop/doc/NR_SA_Tutorial_OAI_nrUE.md?ref_type=heads#51-run-oai-nrue
 > ```
 > # third terminal
