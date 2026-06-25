@@ -1,9 +1,10 @@
-# auto_daily_note (Windows)
+# auto_daily_note (On Windows)
 
 ## Table Of Content
 - [Step](#install)
-- [Rules](#rules)
+- [Daily-Log Comment Format](#daily-log-comment-format)
 - [Holiday / Time-Replacement Policy](#holiday--time-replacement-policy)
+- [How to Run (Daily)](#how-to-run)
 
 ### Make sure you install git
 [Download](https://git-scm.com/install/windows)
@@ -53,7 +54,7 @@ gh auth login
   - Special entries: `SICK LEAVE`, `HOLIDAY`, `ABSENT` *病假、國定假日、補假*
  
 
-### Holiday / Time-Replacement Policy
+## Holiday / Time-Replacement Policy
 When you worked on a public holiday or weekend :
 ```
 ### YYYY/MM/DD
@@ -63,4 +64,63 @@ When you worked on a public holiday or weekend :
 **Daily-logs**:
 - `HH.MM - HH.MM`: [description](url)
 ```
-  
+
+For the compensated absence day :
+```
+### YYYY/MM/DD
+
+**Short-term Goal**:
+<absent — compensated by working on YYYY-MM-DD (Holiday Name)>
+
+**Daily-logs**:
+- `ABSENT — compensated by 2026-05-01 (Labor Day)`
+```
+
+
+## How to Run
+> Activate the venv first :
+> ```
+> .\.venv\Scripts\Activate.ps1
+> ```
+
+### Step 0 — Check missing dates (run this first every time)
+```
+python3 main.py \
+  --dry-run --since YYYY-MM-DD --until YYYY-MM-DD \
+  --ensure-comments --seed-from-commits
+```
+
+### Step 1 — Today only
+```
+# Preview
+python3 main.py --dry-run --today --ensure-comments --seed-from-commits
+
+# Apply
+python3 main.py --apply --today --ensure-comments --seed-from-commits
+```
+Fetches commits from all configured contribution_sources, creates the day's comment if missing, and seeds Daily-logs bullets.
+
+### Step 2 — Backfill a date range
+```
+python3 main.py \
+  --apply --since YYYY-MM-DD --until YYYY-MM-DD \
+  --ensure-comments --seed-from-commits --max-create 20
+```
+> Skip weekends — run one Mon–Fri range at a time to avoid empty weekend entries.
+
+### Step 3 — Generate reminder.md
+Lists missing dates and activities lacking evidence links :    *列出缺少日期以及沒有hyperlink的事項*
+```
+python3 main.py \
+  --generate-reminder reminder.md \
+  --since YYYY-MM-DD --until YYYY-MM-DD
+```
+Output sections:
+
+1. Missing Daily-Log Entries — weekdays with no comment
+2. Activities Without Evidence — bullets with no hyperlink (class/lecture events excluded)
+
+Evidence links must point to a specific file with a **7-digit commit hash** :
+```
+[description](https://github.com/org/repo/blob/abc1234/path/to/file.md#section-heading)
+```
