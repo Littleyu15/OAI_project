@@ -21,9 +21,10 @@
 ### Copy and Edit Config
 > ```
 > # Edit env.yaml — set github.login, contribution_sources, etc.
+> 
 > cp env.example.yaml env.yaml
 > ```
-> ### Edit 
+> ### Edit result
 > <img width="752" height="442" alt="image" src="https://github.com/user-attachments/assets/95a92d25-063b-4701-856e-3bb3f6ad7ac2" />
 
 ### Authenticate GitHub CLI (one time only)
