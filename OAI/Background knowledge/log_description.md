@@ -1,13 +1,13 @@
-- [nrUE_Log (process)](https://github.com/Littleyu15/OAI_project/blob/main/OAI/Background%20knowledge/log/nrUE_log.txt)
-- [gNB_Log (process)](https://github.com/Littleyu15/OAI_project/blob/main/OAI/Background%20knowledge/log/gNB_log.txt)
+- [nrUE_Log (process inform)](https://github.com/Littleyu15/OAI_project/blob/main/OAI/Background%20knowledge/log/nrUE_log.txt)
+- [gNB_Log (process inform)](https://github.com/Littleyu15/OAI_project/blob/main/OAI/Background%20knowledge/log/gNB_log.txt)
 
 ## Table Of Content 
-- [Log introduction](#使用者平面-user-plane)
+- [Log Introduction](#使用者平面-user-plane)
 - [gNB Log (package inform)](#gnb-log)
 - [nrUR_Log (package inform)](#nrue-log)
 
 ### 控制平面 (Control Plane)
-| 標籤 | 功能 | LOG 訊息說明 |
+| 標籤 | 功能 | 說明 |
 |---|---|---|
 | `[RRC]` | 無線資源控制 | 處理與 UE 的連線建立、重配置、測量報告信令。 |
 | `[NR_RRC]` | 5G NR RRC | 專用於 5G NR 的連線狀態機與控制指令處理。<br> `NR` : RAN 裡負責無線傳輸的技術規範|
@@ -17,7 +17,7 @@
 
 
 ### 使用者平面 (User Plane)
-| 標籤 | 功能 | LOG 訊息說明 |
+| 標籤 | 功能 | 說明 |
 |---|---|---|
 | `[PDCP]` | 封包數據收斂 | 加解密、標頭壓縮與序列號管理。 |
 | `[RLC]` | 無線鏈路控制 | 資料的分段、重組與 ARQ 錯誤更正。 |
@@ -25,19 +25,19 @@
 | `[GTPU]` | GTP 使用者平面 | 建立與維護 gNB 和 UPF 間的數據隧道。 |
 
 ### 物理訊號與硬體 (Physical & Hardware)
-| 標籤 | 功能 | LOG 訊息說明 |
+| 標籤 | 功能 | 說明 |
 |---|---|---|
 | `[NR_PHY]` | NR 實體層 | 處理波形生成、調變/解調、通道估測與同步。 |
 | `[PHY]` | 實體層 | 通用實體層功能與底層訊號處理。 |
 | `[HW]` | 硬體驅動 | 與 USRP 等底層射頻卡的互動狀態。 |
 
 ### 系統應用與管理 (System & Utilities)
-| 標籤 | 功能 | LOG 訊息說明 |
+| 標籤 | 功能 | 說明 |
 |---|---|---|
 | `[GNB_APP]` | gNB 應用層 | 整個 gNB 節點的應用邏輯、初始化與狀態監控。 |
 | `[CONFIG]` | 配置模組 | 解析啟動參數與設定檔讀取狀況。 |
 | `[UTIL]` | 工具模組 | 系統輔助功能、時間戳記與除錯工具輸出。 |
-| `[OPT]` | 優化模組 | 效能指標監控、統計數據與調優相關 LOG。 |
+| `[OPT]` | 優化模組 | 效能指標監控、統計數據與調優相關 Log。 |
 
 
 ---
@@ -75,14 +75,14 @@ LCID 2|TX / RX|0 / 0|目前閒置
 LCID 4|TX / RX|12 / 216|通常數據無線載體 (DRB)，處理實際用戶流量
 總計 (MAC)|TX / RX|1541 / 8948|該區間內 MAC 層總吞吐量(Payload + MAC Subheader)
 
-### UE Log
+### nrUE Log
 ```
 [NR_MAC] UE 0 RNTI 8e03 stats sfn: 512.8| cumulated bad DCI 0      
     DL harq: 52/0
     UL harq: 378/0 avg code rate 0.1| avg bit/symbol 2.0| avg per TB: (nb RBs 9.8| nb symbols 11.7)
 ```
 
-項目|數值|描述
+項目|數值|說明
 |---|---|---|
 UE |0|索引值為0
 RNTI|8e03|無線網路暫時識別碼 : 用於區分 UE 的識別碼
