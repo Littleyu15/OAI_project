@@ -8,7 +8,6 @@ OAI_project/
 │   └── Richard_handover_notes.md
 │   └── Tobby_handover_notes.md
 │
-│
 └── OAI/
 	└── config/
 		└── OAI_5G_NR_SA_tutorial_with_OAI_nrU.md
