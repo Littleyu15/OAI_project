@@ -1,16 +1,16 @@
-# E2E amf log 
+# E2E amf Log 
 
 > AMF (Access and Mobility Management Function)
 
 ## Table Of Content
-- [CN5G log](#cn5g-log)
-- [gNB log](#gnb-log)
-- [UE log](#ue-log)
+- [CN5G Log](#cn5g-log)
+- [gNB Log](#gnb-log)
+- [UE Log](#ue-log)
 
 
 
 
-### CN5G log
+### CN5G Log
 > ```
 > [2026-06-25 08:43:57.857] [amf_sbi] [info] HTTP message Body: [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}]
 > [2026-06-25 08:43:57.857] [amf_sbi] [debug] Send a simple HTTP request
@@ -66,7 +66,7 @@
 
 
 
-### gNB log
+### gNB Log
 > ```
 >    |-----------------------------------------------------------------------------------------------------------------------------------------------------------|
 >    |---------------------------------------------------------------------UEs' Information----------------------------------------------------------------------|
@@ -119,7 +119,7 @@
 > [2026-06-25 08:43:37.851] [amf_app] [debug] Set a timer to the next Heart-beat (10)
 > ```
 
-### UE log
+### UE Log
 > ```
 > [2026-06-25 08:41:55.813] [ngap] [debug] Handle a SCTP Shutdown event (association id: 4)
 > [2026-06-25 08:41:55.813] [ngap] [debug] Sending ITTI SCTP Shutdown event to TASK_AMF_N2
