@@ -1,7 +1,7 @@
 # auto_daily_note (On Windows)
 
 ## Table Of Content
-- [Step](#install)
+- [Step](#make-sure-you-install-git)
 - [Daily-Log Comment Format](#daily-log-comment-format)
 - [Holiday / Time-Replacement Policy](#holiday--time-replacement-policy)
 - [How to Run (Daily)](#how-to-run)
