@@ -1,4 +1,4 @@
-# auto_daily_note (On Windows)
+# auto_daily_log_note (On Windows)
 
 ## Table Of Content
 - [Step](#make-sure-you-install-git)
