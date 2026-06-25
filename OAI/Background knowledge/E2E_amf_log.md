@@ -1,4 +1,6 @@
-# E2E amf log
+# E2E amf log 
+
+> AMF (Access and Mobility Management Function)
 
 ## Table Of Content
 - [CN5G log](#cn5g-log)
