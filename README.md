@@ -8,9 +8,6 @@ OAI_project/
 │   └── Richard_handover_notes.md
 │   └── Tobby_handover_notes.md
 │
-├── Daily_logs/
-│   └── 2026_06.md
-│   └── 2026_07.md
 │
 └── OAI/
 	└── config/
