@@ -103,21 +103,6 @@ Overall Result:
 * ☐ Pass with Minor Issues
 * ☐ Fail
 
----
-
-## Where?
-
-### Related Documents
-
-* [Knowledge Transfer](../docs/10-knowledge-transfer.md)
-
-### Related Templates
-
-* [B-knowledge-transfer-checklist.md](B-knowledge-transfer-checklist.md)
-* [D-acceptance-form.md](D-acceptance-form.md)
-
----
-
 ## Final Message
 
 > **Verification is successful only when the next researcher can independently understand, reproduce, and continue the research.**
