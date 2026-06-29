@@ -5,7 +5,7 @@
   - [系統建置](#系統建置)
   - [攻擊模組](#攻擊模組)
   - [學術資源](#學術資源)
-  - [DGX spark](#dgx-spark)
+- [DGX spark](#dgx-spark)
 - [確認事項](#確認事項)
 - [Notice](#notice)
 
