@@ -9,7 +9,7 @@
 This guide covers building and running the OAI gNB with telnetsrv enabled, which is required for the O1 Adapter to function.
 
 
-
+## System Integration Diagram
 ```mermaid
 graph TD
     %% Define Styles
