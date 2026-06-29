@@ -1,21 +1,22 @@
 # G Reigns Handover
 
 > **Can another researcher reproduce and continue this work?**
-
+>
 This report records the verification performed by the incoming researcher after receiving the research package.
 
 ---
 
-## Why?
+## Table Of Contents
 
-Knowledge transfer is complete only when another researcher can independently understand, reproduce, and continue the research.
-
-Verification confirms that the transferred research package is complete, accessible, and reproducible[cite: 5].
+- [Research Information](#research-information)
+- [1. Research Package Verification](#1-research-package-verification)
+- [2. Repository Verification](#2-repository-verification)
+- [3. Minimum Reproducible Result (MRR)](#3-minimum-reproducible-result-mrr)
+- [4. Research Assets](#4-research-assets)
+- [5. Remaining Issues](#5-remaining-issues)
+- [Verification Summary](#verification-summary)
 
 ---
-
-## What?
-
 ### Research Information
 
 | Item                | Description |
