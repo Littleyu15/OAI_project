@@ -9,7 +9,7 @@ sudo kill -9 61260
 ```
 
 
-### list the current USB 
+### list current USB 
 ```
 lsusb
 ```
