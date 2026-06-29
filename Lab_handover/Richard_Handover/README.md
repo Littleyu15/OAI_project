@@ -106,3 +106,17 @@ MSG1 Jamming Attacker:https://github.com/Littleyu15/OAI_project/blob/main/Lab_ha
 | Repository accessible                   | ✔️ Pass ☐ Fail |
 | MRR successfully reproduced             | ☐ Pass ☐ Fail |
 | Research can be continued independently | ☐ Pass ☐ Fail |
+
+
+---
+
+Overall Result:
+
+* ☐ Pass
+* ☐ Pass with Minor Issues
+* ☐ Fail
+
+---
+## Final Message
+
+> **Verification is successful only when the next researcher can independently understand, reproduce, and continue the research.**
