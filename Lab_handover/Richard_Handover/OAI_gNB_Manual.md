@@ -10,6 +10,7 @@ This guide covers building and running the OAI gNB with telnetsrv enabled, which
 
 
 ## System Integration Diagram
+
 ```mermaid
 graph TD
     %% Define Styles
