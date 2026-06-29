@@ -61,7 +61,7 @@ sudo ninja nr-softmodem nr-uesoftmodem dfts ldpc params_libconfig
 After building and entering the build folder, start the UE softmodem with:
 
 ```
-cd OAI-UE-MSG1-attacker/cmake_targets/ran_build/build
+cd richard/new/openairinterface/cmake_targets/ran_build/build
 sudo ./nr-uesoftmodem -r 106 --numerology 1 --band 78 -C 3619200000 --ssb 516 -E --ue-fo-compensation
 ```
 
