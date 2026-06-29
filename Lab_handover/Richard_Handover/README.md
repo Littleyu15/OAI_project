@@ -1,48 +1,106 @@
-# OAI Jamming Attacker Handover 
+# OAI Jamming Attacker Handover
 
-## Table Of Content :
-- [主要內容](#主要內容)
-  - [系統建置](#系統建置)
-  - [攻擊模組](#攻擊模組)
-  - [學術資源](#學術資源)
-  - [DGX spark](#dgx-spark)
-- [確認事項](#確認事項)
-- [Notice](#notice)
+> **Can another researcher reproduce and continue this work?**
+
+This report records the verification performed by the incoming researcher after receiving the research package.
 
 
-## 主要內容
 
-此區包含 OAI 系統建置與攻擊模組的技術文件：
+---
 
-### 系統建置
+## Table Of Contents
+
+- [Research Information](#research-information)
+- [1. Research Package Verification](#1-research-package-verification)
+- [2. Repository Verification](#2-repository-verification)
+- [3. Minimum Reproducible Result (MRR)](#3-minimum-reproducible-result-mrr)
+- [4. Research Assets](#4-research-assets)
+- [5. Remaining Issues](#5-remaining-issues)
+- [Verification Summary](#verification-summary)
+
+---
+
+## Research Information
+
+| Item | Description |
+| :--- | :--- |
+| Research Title | OAI Jamming Attacker |
+| Outgoing Researcher | Richard |
+| Incoming Researcher | Kevin|
+| Verification Date | |
+
+---
+
+## 1. Research Package Verification
+
+| Item | Link Accessible | Verified | Remarks |
+| :--- | :---: | :---: | :--- |
+| Thesis / Paper / Slides | ✔️ | ☐ | [Academic Resources](#academic-resources) |
+| Design Documents | ✔️ | ☐ | [System Manuals](#system-manuals) |
+| README | ✔️ | ☐ | Current Document |
+
+### System Manuals
 - [OAI gNB Manual](https://github.com/Littleyu15/OAI_project/blob/main/Lab_handover/Richard_Handover/OAI_gNB_Manual.md)
 - [OAI O1 Adapter Manual](https://github.com/Littleyu15/OAI_project/blob/main/Lab_handover/Richard_Handover/O1_Adapter_Manual.md)
 - [MTK UE Manual](https://github.com/Littleyu15/OAI_project/blob/main/Lab_handover/Richard_Handover/MTK%20UE.md#mtk-ue-manual)
 
-
-### 攻擊模組
-- [MSG1 Jamming Attacker Manual](https://github.com/Littleyu15/OAI_project/blob/main/Lab_handover/Richard_Handover/MSG1_Attacker_Manual.md)
-
-### 學術資源
+### Academic Resources
 - Attacker User Guide
 - 論文簡報
 - 口委提問
 - 未來方向：防禦
 
-### DGX spark
-- User Guide
+---
+
+## 2. Repository Verification
+
+| Item | Accessible | Verified | Remarks |
+| :--- | :---: | :---: | :--- |
+| GitHub Repository | ✔️ | ☐ | OAI_project |
+| Latest Working Commit | ☐ | ☐ | |
+| VS Code SSH Setup | ✔️ | ☐ | Confirmed |
+| pCloud Folder         | ✔️         | ☐        |         |
+
+---
+
+## 3. Minimum Reproducible Result (MRR)
+
+| Item | Verified | Remarks |
+| :--- | :---: | :--- |
+| Environment successfully configured | ☐ | OAI gNB & O1 Adapter |
+| Required configuration files available    | ✔️        |         |
+| Scripts or commands executed | ✔️ | MSG1 Jamming Attacker |
+| Expected result reproduced | ☐ | |
+| Reference logs confirmed                  | ✔️        |         |
+
+Evidence (Hyperlink):
+```text
+(Insert path or link to logs)
+```
+
+### 4. Research Assets
+
+| Asset                  | Accessible | Verified | Remarks |
+| ---------------------- | ---------- | -------- | ------- |
+| Hardware               | ✔️          | ☐        |USRP、Control PC、mini PC|
+| Software License       | ✔️         | ☐        ||
+| Accounts / Permissions | ✔️          | ☐        |         |
+| Dataset                | ☐          | ☐        |         |
+| Other Resources        | ☐          | ☐        |         |
 
 
-## 確認事項
+### 5. Remaining Issues
 
-- [ ] 環境驗證：根據手冊完成 OAI gNB 與 O1 Adapter 的基礎環境架設。
-- [X] 進度更新：確認所有實驗數據路徑與 VS Code SSH 遠端連線設定無誤。
-- [X] 功能測試：執行 MSG1 Jamming Attacker 並確認攻擊模組運作正常。
-- [ ] 知識傳承：閱讀完畢「論文簡報」及「口委提問」記錄，釐清專案邊界。
-- [ ] 權限確認：確認 DGX Spark 的存取權限與操作手冊已同步。
-      
-## Notice
-> 架設OAI環境
-> 
-> 等待Richard實驗結束交接 **USRP B210**
+| Issue | Severity            | Recommendation |
+| ----- | ------------------- | -------------- |
+|G Reigns attack testing|  Medium|waiting for HTC License|
+|       | High / Medium / Low |                |
 
+### Verification Summary
+
+| Item                                    | Result        |
+| --------------------------------------- | ------------- |
+| Research understood                     | ☐ Pass ☐ Fail |
+| Repository accessible                   | ✔️ Pass ☐ Fail |
+| MRR successfully reproduced             | ☐ Pass ☐ Fail |
+| Research can be continued independently | ☐ Pass ☐ Fail |
