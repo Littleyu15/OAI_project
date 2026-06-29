@@ -4,7 +4,7 @@
 - [Introduction](#introduction)
 - [Scenario](#scenario)
   - [Minimum hardware requirements](#minimum-hardware-requirements)
-- [Step](#quick-re-build(after-edit))
+- [Step](#quick-re-buildafter-edit)
 ## Introduction
 This document explains how to configure, build, and run the MSG1 Jamming Attacker based on OAI (OpenAirInterface).
 
