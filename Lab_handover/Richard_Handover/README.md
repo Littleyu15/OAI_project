@@ -75,7 +75,9 @@ This report records the verification performed by the incoming researcher after 
 
 Evidence (Hyperlink):
 ```text
-(Insert path or link to logs)
+OAI gNB:https://github.com/Littleyu15/OAI_project/blob/main/Lab_handover/Richard_Handover/OAI_gNB_Manual.md
+O1 Adapter:https://github.com/Littleyu15/OAI_project/blob/main/Lab_handover/Richard_Handover/O1_Adapter_Manual.md
+MSG1 Jamming Attacker:https://github.com/Littleyu15/OAI_project/blob/main/Lab_handover/Richard_Handover/MTK%20UE.md#mtk-ue-manual
 ```
 
 ### 4. Research Assets
@@ -94,13 +96,13 @@ Evidence (Hyperlink):
 | Issue | Severity            | Recommendation |
 | ----- | ------------------- | -------------- |
 |G Reigns attack testing|  Medium|waiting for HTC License|
-|       | High / Medium / Low |                |
+
 
 ### Verification Summary
 
 | Item                                    | Result        |
 | --------------------------------------- | ------------- |
-| Research understood                     | ☐ Pass ☐ Fail |
+| Research understood                     | ✔️ Pass ☐ Fail |
 | Repository accessible                   | ✔️ Pass ☐ Fail |
 | MRR successfully reproduced             | ☐ Pass ☐ Fail |
 | Research can be continued independently | ☐ Pass ☐ Fail |
