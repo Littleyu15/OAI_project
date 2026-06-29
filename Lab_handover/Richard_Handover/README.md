@@ -7,6 +7,10 @@
 
 ### OAI Attacker
 
+- [OAI gNB Manual](#)
+- [OAI O1 Adapter Manual](#)
+- [MSG1 Jamming Attacker Manual](#)
+
 - Attacker User Guide
 - 論文簡報
 - 口委提問
