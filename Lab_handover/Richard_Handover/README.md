@@ -17,6 +17,7 @@
 ### 系統建置
 - [OAI gNB Manual](https://github.com/Littleyu15/OAI_project/blob/main/Lab_handover/Richard_Handover/OAI_gNB_Manual.md)
 - [OAI O1 Adapter Manual](https://github.com/Littleyu15/OAI_project/blob/main/Lab_handover/Richard_Handover/O1_Adapter_Manual.md)
+- [MTK UE Manual](https://github.com/Littleyu15/OAI_project/blob/main/Lab_handover/Richard_Handover/MTK%20UE.md#mtk-ue-manual)
 
 
 ### 攻擊模組
