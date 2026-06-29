@@ -1,16 +1,16 @@
 # OAI Jamming Attacker Handover 
 
 ## Table Of Content :
-- [核心模組](#核心模組)
+- [主要內容](#主要內容)
   - [系統建置](#系統建置)
   - [攻擊模組](#攻擊模組)
   - [學術資源](#學術資源)
-- [DGX spark](#dgx-spark)
+  - [DGX spark](#dgx-spark)
 - [確認事項](#確認事項)
 - [Notice](#notice)
 
 
-## 核心模組
+## 主要內容
 
 此區包含 OAI 系統建置與攻擊模組的技術文件：
 
