@@ -18,7 +18,7 @@ Minimum hardware requirements :
   - RAM: 8 GB
  
   
-### 1️⃣[OAI CN5G Setup](https://github.com/Littleyu15/OAI_project/blob/main/OAI/OAI_CN5G_installation.md#oai_cn5g_installation)
+### 1️⃣[OAI CN5G Setup](https://github.com/Littleyu15/OAI_project/blob/main/OAI/doc/OAI_CN5G_installation.md#oai_cn5g_installation)
 
 ### 2️⃣OAI gNB and OAI nrUE pre-requisites
 (Build UHD from source)
