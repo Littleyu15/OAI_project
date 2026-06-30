@@ -58,5 +58,6 @@ sudo ./nr-softmodem -O ../../../targets/PROJECTS/GENERIC-NR-5GC/CONF/gnb.sa.band
 - `--telnetsrv`: Enable telnet server, so that we can connect to O1 Adapter.
 - `--telnetsrv.shrmod o1`: Connect to O1 Adapter.
 
-#### optional parameter
+#### Available options
 - `--log_config.PRACH_dump`: Fully information of PRACH Log.
+- `--sa`: Start gNB in SA (Standalone) mode, connects directly to the 5G Core.
