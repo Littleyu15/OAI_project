@@ -47,3 +47,16 @@ cd openairinterface5g/cmake_targets/ran_build/build
 # O1 telnet enable
 sudo ./nr-softmodem -O ../../../targets/PROJECTS/GENERIC-NR-5GC/CONF/gnb.sa.band78.fr1.106PRB.usrpb210.conf --gNBs.[0].min_rxtxtime 6 -E --continuous-tx --log_config.PRACH_debug --telnetsrv --telnetsrv.shrmod o1
 ```
+
+#### Parameter Description
+- `./nr-softmodem`: Execute the OAI gNB software modem program *(執行 OAI 的 gNB 軟體 modem 程式)*
+- `-O ../../../targets/PROJECTS/GENERIC-NR-5GC/CONF/gnb.sa.band78.fr1.106PRB.usrpb210.conf`: go to file destination and choose config.
+- `--gNBs.[0].min_rxtxtime 6`: The first gNB node minimum RX-to-TX time, means 6 slots.
+- `-E`: Enable certain additional execution modes.
+- `--continuous-tx`: Configure the gNB to transmit signals continuously.
+- `--log_config.PRACH_debug`: Enable PRACH-related debug logs.
+- `--telnetsrv`: Enable telnet server, so that we can connect to O1 Adapter.
+- `--telnetsrv.shrmod o1`: Connect to O1 Adapter.
+
+#### optional parameter
+- `--log_config.PRACH_dump`: Fully information of PRACH Log.
