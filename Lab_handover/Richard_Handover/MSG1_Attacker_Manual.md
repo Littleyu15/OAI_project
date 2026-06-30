@@ -75,12 +75,12 @@ sudo ./nr-uesoftmodem -r 106 --numerology 1 --band 78 -C 3619200000 --ssb 516 -E
 
 ### Notes on parameters
 
-- `-r 106`:Number Resource Block is 106
-- `--numerology 1`: Subcarrier Spacing（SCS）。 A value of 1 indicates 30 kHz (2^1 × 15 kHz). *(子載波的間距)*
+- `-r <value>`:Number of Resource Block
+- `--numerology <value>`: Subcarrier Spacing（SCS）。 A value of 1 indicates 30 kHz (2^1 × 15 kHz). *(子載波的間距)*
 - `--band 78`: Use the **n78 (3.3-3.8 GHz)frequency band**.
 - `C <frequency>`: The value passed to `C` is the center frequency in Hz, computed from the SSB ARFCN. Convert the SSB ARFCN to the corresponding frequency (Hz) and provide that value to `C`.
 - `-ssb <offset>`: The value passed to `-ssb` is the SSB index/offset used to select the specific SSB within the carrier.
-- `-E`: External Timing Synchronization *(時序同步)*
+- `-E`: "Enable EBF" (Enable External Band Filter) *(啟用硬體特定的增強功能或特定的射頻前端處理配置)*
 - `--ue-fo-compensation`: Enable automatic frequency offset compensation. *(啟用頻率偏移自動補償)*
 
 ### Available options
