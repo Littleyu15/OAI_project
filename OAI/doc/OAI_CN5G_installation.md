@@ -107,3 +107,7 @@ location: `/oai-cn5g/docker-compose.yaml`
 
  **💡 啟動架構備註：**
  從啟動順序可以看出，系統優先啟動基礎設施（`mysql`, `oai-ext-dn`）與核心註冊中心（`oai-nrf`），接著載入資料庫介接與認證模組（`udr`, `udm`, `ausf`），最後才啟動處理控制信號與網路傳輸的核心管理節點（`amf`, `smf`, `upf`）。
+ 
+ 當一個 5G 設備要求上網時，AMF 處理連線，AUSF/UDM/UDR/MySQL 確認身分，SMF 建立上網通道並發配 IP，最後由 UPF 負責將設備的資料轉到 Ext-DN 完成上網。
+ 
+
