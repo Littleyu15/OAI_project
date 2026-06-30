@@ -107,8 +107,20 @@ we need three terminal to run E2E
 > cd ~/openairinterface5g/cmake_targets/ran_build/build
 > sudo ./nr-uesoftmodem -r 106 --numerology 1 --band 78 -C 3619200000 --uicc0.imsi 001010000000001 --rfsim --rfsimulator.serveraddr 127.0.0.1
 > ```
+> 
 > ### Output
 > <img width="702" height="521" alt="image" src="https://github.com/user-attachments/assets/64aa0423-fd71-4acb-bc64-172a39cc1a2d" />
+
+#### Parameter Description
+- `-r <value>`:Number of Resource Block
+- `--numerology <value>`: Subcarrier Spacing（SCS）。 A value of 1 indicates 30 kHz (2^1 × 15 kHz). *(子載波的間距)*
+- `--band 78`: Use the **n78 (3.3-3.8 GHz)frequency band**.
+- `C <frequency>`: The value passed to `C` is the center frequency in Hz, computed from the SSB ARFCN. Convert the SSB ARFCN to the corresponding frequency (Hz) and provide that value to `C`.
+- `-ssb <offset>`: The value passed to `-ssb` is the SSB index/offset used to select the specific SSB within the carrier.
+- `--rfsim`: RF simulator, dont need hardware
+- `--rfsimulator.serveraddr 127.0.0.1`: Connect to the local RF simulator server
+- `--uicc0.imsi 001010000000001`: USIM Card IMSI (Simulated SIM Card)
+
 
 ### 5️⃣Check nrUE amf log 
 
