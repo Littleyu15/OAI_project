@@ -2,7 +2,7 @@
 - [gNB_Log (process inform)](https://github.com/Littleyu15/OAI_project/blob/main/OAI/Background%20knowledge/log/gNB_log.txt)
 
 ## Table Of Content 
-- [Log Introduction](#使用者平面-user-plane)
+- [Log Introduction](#控制平面-control-plane)
 - [gNB Log (package inform)](#gnb-log)
 - [nrUR_Log (package inform)](#nrue-log)
 
