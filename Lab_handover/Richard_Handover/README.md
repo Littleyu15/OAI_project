@@ -36,8 +36,8 @@ Read the **defense slides** and **paper** only. Identify the research contributi
 | Contribution | Proposed Test Case (TC) | Verification Metric |
 | ------------ | ----------------------- | ------------------- |
 | MSG1 Jamming | Execute Jamming Attack | Attack success rate / UE connection status |
-| OAI gNB   | build OAI gNB   |success run |
-| O1 Adapter   | O1 Adapter build   |success run |
+| OAI gNB   | build OAI gNB   |Run success  |
+| O1 Adapter   | O1 Adapter build   |Run success |
 
 ---
 
