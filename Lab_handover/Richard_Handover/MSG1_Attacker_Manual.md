@@ -85,6 +85,8 @@ sudo ./nr-uesoftmodem -r 106 --numerology 1 --band 78 -C 3619200000 --ssb 516 -E
 
 ### Available options
 
+- `--seq <value>`: RACH amount  (max = 64)
+- `--ue-max-power <value>`: UE maximumn power limination (90+)
 - `-ue-txgain <value>`: Adjust UE transmit power (tx gain). Example: `-ue-txgain 120`.
 - `-ue-rxgain <value>`: Adjust UE receive gain (rx gain). Example: `-ue-rxgain 120`.
 - `att_tx <value>`: Adjust gNB transmit power (if supported by the attacker tool).
