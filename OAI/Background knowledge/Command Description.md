@@ -1,3 +1,4 @@
+### Quick Rebuild
 ```
 sudo ninja nr-softmodem nr-uesoftmodem dfts ldpc params_libconfig
 ```
