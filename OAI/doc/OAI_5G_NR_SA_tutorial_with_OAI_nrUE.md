@@ -3,7 +3,7 @@
 
 # Table Of Content 
 - [Scenario](#scenario)
-- [Step](#oai-cn5g-setup)
+- [Step](#oai-gnb-and-oai-nrue-pre-requisites)
 
   
 ### 💻Scenario
