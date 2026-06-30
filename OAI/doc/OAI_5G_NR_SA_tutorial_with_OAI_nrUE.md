@@ -84,6 +84,7 @@ we need three terminal to run E2E
 > watch -n 1 docker compose -f docker-compose.yaml ps -a
 > ```
 > ### Output
+location: `/oai-cn5g/docker-compose.yaml`
 > ```
 > Container oai-ext-dn  1.6s  # External Data Network(外部數據網路): Simulates external internet and routes traffic.
 > Container oai-nrf     1.5s  # Network Repository Function(網路儲存庫功能): Service registration and discovery center.
