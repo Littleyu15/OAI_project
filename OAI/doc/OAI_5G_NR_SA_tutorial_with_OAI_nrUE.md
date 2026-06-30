@@ -99,7 +99,7 @@ we need three terminal to run E2E
 
 當一個 5G 設備要求上網時，AMF 處理連線，AUSF/UDM/UDR/MySQL 確認身分，SMF 建立上網通道並發配 IP，最後由 UPF 負責將設備的資料轉到 Ext-DN 完成上網。
 
-[中文版](#5gc中文)
+[中文版](#5gc-中文)
 
 ### 5️-2️ Run OAI gNB
 > Refrence : https://gitlab.eurecom.fr/oai/openairinterface5g/-/blob/develop/doc/NR_SA_Tutorial_OAI_nrUE.md?ref_type=heads#42-run-oai-gnb
