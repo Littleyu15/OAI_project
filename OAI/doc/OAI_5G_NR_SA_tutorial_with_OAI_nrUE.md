@@ -98,7 +98,7 @@ location: `/oai-cn5g/docker-compose.yaml`
 > Container oai-upf     0.8s  # User Plane Function(使用者平面功能): Routes and forwards user data packets.
 > ```
 
-當一個 5G 設備要求上網時，AMF 處理連線，AUSF/UDM/UDR/MySQL 確認身分，SMF 建立上網通道並發配 IP，最後由 UPF 負責將設備的資料轉到 Ext-DN 完成上網。
+當一個 5G 設備要求上網時，`AMF` 處理連線，`AUSF`/`UDM`/`UDR`/`MySQL` 確認身分，`SMF` 建立上網通道並發配 IP，最後由 `UPF` 負責將設備的資料轉到 `Ext-DN` 完成上網。
 
 [中文版](#5gc-中文)
 
