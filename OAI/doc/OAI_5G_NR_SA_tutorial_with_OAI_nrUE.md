@@ -3,7 +3,7 @@
 
 # Table Of Content 
 - [Scenario](#scenario)
-- [Step](#oai-gnb-and-oai-nrue-pre-requisites)
+- [Step](#oai-gnb-and-oai-nrue-prerequisites)
 
   
 ### 💻Scenario
