@@ -51,11 +51,19 @@ graph TD
 cd ~/OAI-UE-MSG1-attacker/cmake_targets/ran_build/build
 sudo ninja nr-softmodem nr-uesoftmodem dfts ldpc params_libconfig
 ```
+#### Notes on parameters
+- `ninja` : Compiler tool
+- `nr-softmodem` : Main code of 5G gNB in OAI   *(OAI 中 5G gNB的主程式)*
+- `nr-uesoftmodem` : Main code of 5G UE in OAI   *(OAI 中 5G UE的主程式)*
+- `dfts` : (Discrete Fourier Transform Spread) Module of **DFT-s-OFDM** Signal processing algorithms   *(負責訊號處理演算法)*
+- `ldpc` : (Low-Density Parity-Check)Channel Coding in 5G NR, doing error correction and error detection.   *(負責在傳輸數據時進行糾錯與檢錯)*
+- `params_libconfig` : Function library of OAI loading Configuration Files *(OAI 用於載入設定檔的函式庫)*
+
 
 ### Execute Attacker (USRP B210)
 
 > [!IMPORTANT]
-> Run the attacker on a separate host from the gNB (for example, a second Ubuntu 22.04 machine).
+> Run the attacker on a separate host from the gNB (for example, a second Ubuntu 24.04 machine).
 
 
 After building and entering the build folder, start the UE softmodem with:
@@ -67,8 +75,13 @@ sudo ./nr-uesoftmodem -r 106 --numerology 1 --band 78 -C 3619200000 --ssb 516 -E
 
 ### Notes on parameters
 
+- `-r 106`:Number Resource Block is 106
+- `--numerology 1`: Subcarrier Spacing（SCS）。 A value of 1 indicates 30 kHz (2^1 × 15 kHz). *(子載波的間距)*
+- `--band 78`: Use the **n78 (3.3-3.8 GHz)frequency band**.
 - `C <frequency>`: The value passed to `C` is the center frequency in Hz, computed from the SSB ARFCN. Convert the SSB ARFCN to the corresponding frequency (Hz) and provide that value to `C`.
 - `-ssb <offset>`: The value passed to `-ssb` is the SSB index/offset used to select the specific SSB within the carrier.
+- `-E`: External Timing Synchronization *(時序同步)*
+- `--ue-fo-compensation`: Enable automatic frequency offset compensation. *(啟用頻率偏移自動補償)*
 
 ### Available options
 
