@@ -3,7 +3,7 @@
 
 # Table Of Content 
 - [Scenario](#scenario)
-- [Step](#oai-cn5g-setup-https://github.com/Littleyu15/OAI_project/blob/main/OAI/OAI_CN5G_installation.md#oai_cn5g_installation)
+- [Step](#oai-cn5g-setup)
 
   
 ### 💻Scenario
