@@ -96,6 +96,14 @@ we need three terminal to run E2E
 > ### Output
 > <img width="658" height="488" alt="image" src="https://github.com/user-attachments/assets/63886583-b26d-4cf4-871e-fcbfa76e3cfd" />
 
+#### Parameter Description
+
+- `./nr-softmodem`: Execute the OAI gNB software modem program *(執行 OAI 的 gNB 軟體 modem 程式)*
+- `-O ../../../targets/PROJECTS/GENERIC-NR-5GC/CONF/gnb.sa.band78.fr1.106PRB.usrpb210.conf`: go to file destination and choose config.
+- `--gNBs.[0].min_rxtxtime 6`: The first gNB node minimum RX-to-TX time, means 6 slots.
+- `--rfsim`: RF simulator, dont need hardware
+
+
 
 ### 5️-3️ Run OAI nrUE
 > Refrence : https://gitlab.eurecom.fr/oai/openairinterface5g/-/blob/develop/doc/NR_SA_Tutorial_OAI_nrUE.md?ref_type=heads#51-run-oai-nrue
@@ -112,16 +120,18 @@ we need three terminal to run E2E
 > <img width="702" height="521" alt="image" src="https://github.com/user-attachments/assets/64aa0423-fd71-4acb-bc64-172a39cc1a2d" />
 
 #### Parameter Description
+- `./nr-uesoftmodem`: Execute the OAI UE software modem program.
 - `-r <value>`:Number of Resource Block
 - `--numerology <value>`: Subcarrier Spacing（SCS）。 A value of 1 indicates 30 kHz (2^1 × 15 kHz). *(子載波的間距)*
 - `--band 78`: Use the **n78 (3.3-3.8 GHz)frequency band**.
 - `C <frequency>`: The value passed to `C` is the center frequency in Hz, computed from the SSB ARFCN. Convert the SSB ARFCN to the corresponding frequency (Hz) and provide that value to `C`.
-- `-ssb <offset>`: The value passed to `-ssb` is the SSB index/offset used to select the specific SSB within the carrier.
+- `--uicc0.imsi 001010000000001`: USIM Card IMSI (Simulated SIM Card)
 - `--rfsim`: RF simulator, dont need hardware
 - `--rfsimulator.serveraddr 127.0.0.1`: Connect to the local RF simulator server
-- `--uicc0.imsi 001010000000001`: USIM Card IMSI (Simulated SIM Card)
 
 
+
+- 
 ### 5️⃣Check nrUE amf log 
 
 [Log Description](https://github.com/Littleyu15/OAI_project/blob/main/OAI/Background%20knowledge/Log_description.md#table-of-content)
