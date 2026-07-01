@@ -42,11 +42,11 @@ Reproduce every experimental result presented in the final defense slides.
 
 | Slide / Figure / Table | Expected Result | Reproduced Result | Evidence | Status |
 |---|---|---|---|---|
-| User Guide | user guide of building E2E  | |  | ☐ Pass ☐ Fail ☐ Blocked |
-| Attacker Manual| Successfully build and running attacker | | [MSG1 Attacker Manual](https://github.com/Littleyu15/OAI_project/blob/main/Lab_handover/Richard_Handover/MSG1_Attacker_Manual.md) | ☐ Pass ☐ Fail ☐ Blocked|
-| gNB Manual| Successfully build and running gNB | | [OAI gNB Manual](https://github.com/Littleyu15/OAI_project/blob/main/Lab_handover/Richard_Handover/OAI_gNB_Manual.md) | ☐ Pass ☐ Fail ☐ Blocked |
-| Adapter Connected | Successfully Connect to O1 | | [OAI O1 Adapter Manual](https://github.com/Littleyu15/OAI_project/blob/main/Lab_handover/Richard_Handover/O1_Adapter_Manual.md) | ☐ Pass ☐ Fail ☐ Blocked |
-| Adapter Log Trace | Correct parameter adjustment (O1 Adapter) | | [OAI O1 Adapter Manual](https://github.com/Littleyu15/OAI_project/blob/main/Lab_handover/Richard_Handover/O1_Adapter_Manual.md) | ☐ Pass ☐ Fail ☐ Blocked |
+| User Guide | user guide of building E2E  | `User_Guide.md` |  | ☐ Pass ☐ Fail ☐ Blocked |
+| Attacker Manual| Successfully build and running attacker |`MSG1_Attacker_Manual.md` | [MSG1 Attacker Manual](https://github.com/Littleyu15/OAI_project/blob/main/Lab_handover/Richard_Handover/MSG1_Attacker_Manual.md) | ☐ Pass ☐ Fail ☐ Blocked|
+| gNB Manual| Successfully build and running gNB | `OAI_gNB_Manual.md`| [OAI gNB Manual](https://github.com/Littleyu15/OAI_project/blob/main/Lab_handover/Richard_Handover/OAI_gNB_Manual.md) | ☐ Pass ☐ Fail ☐ Blocked |
+| Adapter Connected | Successfully build and Connect to O1 | `O1_Adapter_Manual.md`| [OAI O1 Adapter Manual](https://github.com/Littleyu15/OAI_project/blob/main/Lab_handover/Richard_Handover/O1_Adapter_Manual.md) | ☐ Pass ☐ Fail ☐ Blocked |
+
 
 *(Note: Please fill in the "Reproduced Result" and update the "Evidence" column with your specific execution logs during the actual verification process.)*
 
