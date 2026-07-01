@@ -14,7 +14,7 @@ python main.py --apply --today --ensure-comments --seed-from-commits
 
 | 月份  | 月目標                                                                  | 月檢查點 |
 | --- | -------------------------------------------------------------------- | ---- |
-| 7 月 | 完成 DGX 環境建置、重現 Richard 實驗、HTC Jamming 攻擊設計、Channel Model 抽離及 DURANTA/O-CU-DU 研究 | 7/31 |
+| 7 月 | 完成 OAI 環境建置、重現 Richard 實驗、HTC Jamming 攻擊設計、Channel Model 抽離及 DURANTA/O-CU-DU 研究 、 完成 DGX 環境建置 | 7/31 |
 
 ---
 
@@ -22,7 +22,7 @@ python main.py --apply --today --ensure-comments --seed-from-commits
 
 | 週次    | 日期        | 週五檢查點 | 週里程碑                                                   | 預期總進度 |
 | ----- | --------- | ----- | ------------------------------------------------------ | ----: |
-| W1    | 7/1–7/3   | 7/3   | 完成 DGX spark 安裝、環境設定與學習筆記                               | 20%   |
+| W1    | 7/1–7/3   | 7/3   | 完成 OAI 安裝、環境設定與學習筆記                               | 20%   |
 | W2    | 7/6–7/10  | 7/10  | 研讀並重現 Richard 論文結果，產出對應實驗數據與比較分析                      | 40% |
 | W3    | 7/13–7/17 | 7/17  | 針對 HTC 基站完成 Jamming attack 的攻擊、封包擷取與驗證報告            | 60%  |
 | W4    | 7/20–7/24 | 7/24  | 完成 OAI NTN Channel Model 獨立抽離模組設計，並提交單元測試              | 80%  |
@@ -35,7 +35,9 @@ python main.py --apply --today --ensure-comments --seed-from-commits
 ## 工時估算原則
 
 每日預估工時以 6–7 小時為基準。
+
 每一天通常安排一個主要工作，但實際工時包含資料查找、參數確認、文件整理、log / evidence 整理、Pending / Blocked 紀錄，以及隔天工作準備。
+
 若主要工作提前完成，剩餘時間用於補齊本週其他產出；若主要工作無法完成，則保留目前進度、blocked reason 與 next step。
 
 ## 協作者與分工
@@ -52,13 +54,13 @@ python main.py --apply --today --ensure-comments --seed-from-commits
 
 ## 週里程碑
 
-完成 DGX spark 安裝、硬體規格熟悉，並將相關測試與學習紀錄整理成筆記。
+完成 OAI 安裝，並將相關測試與學習紀錄整理成筆記。
 
 ## 每日工作
 
 | 日期 | 主要工作 | 預估工時 | 補充工作 / 緩衝 | 截止日期 | 預期產出 |
 |---|---|---:|---|---|---|
-| 7/1（三） | 進入 DGX 環境，熟悉硬體規格與資源監控介面 | 6h | 若權限或網路有問題，直接詢問學長 | 7/1 | `dgx-hardware-spec.md` |
+| 7/1（三） | 完成 OAI 建置以及 Log 筆記 | 6h |  | 7/1 | `oai_user_guide.md` |
 | 7/2（四） | 執行 DGX spark 安裝與 Container 環境設定測試 | 7h | 解決 Container 啟動時的掛載問題，保存 command 與 log | 7/2 | `dgx-spark-installation-log.md` |
 | 7/3（五） | 週檢查點：撰寫 DGX spark 學習筆記並確認環境可穩定運行 | 6h | 補齊截圖與執行 evidence，盤點下週重現實驗的檔案 | 7/3 | `dgx-spark-study-notes.md`, `week1-checkpoint.md` |
 
@@ -66,7 +68,7 @@ python main.py --apply --today --ensure-comments --seed-from-commits
 
 | 產出 | 完成度 | 截止日期 |
 |---|---:|---|
-| `dgx-hardware-spec.md` | 100% | 7/1 |
+| `oai_user_guide.md` | 100% | 7/1 |
 | `dgx-spark-installation-log.md` | 100% | 7/2 |
 | `dgx-spark-study-notes.md` | 100% | 7/3 |
 | `week1-checkpoint.md` | 100% | 7/3 |
