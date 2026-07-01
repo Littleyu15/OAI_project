@@ -55,8 +55,8 @@ sudo ./nr-uesoftmodem -r 106 --numerology 1 --band 78 -C 3619200000 --uicc0.imsi
 #### 預計測試討論
 - G Reigns 基站與 RU 配置：G Reigns 基地台使用 n48 頻段。原先連接的 Foxconn RU 因缺乏 n48 的韌體而不支援該頻段，因此實務上必須替換為 Pegatron RU。
 
-- 在 6/29 的交接中，因使用n78頻段，於是掃描到一個 UE 連線並且得知此 UE 為 **Pegatron dongle**，並成功對其進行攻擊，導致該 dongle 無法連線。
-
+- 於 6/29 的交接測試中，攻擊前 gNB 原有偵測到 Pegatron dongle (UE) 的連線。在攻擊測試期間，即確認該裝置無法接入網路。
+ 
 - 鎖頻目的：在UE端設定鎖頻，是為了確保 MTK UE 能穩定鎖定在我們自建的基地台上。
 
 ### 4. 鎖頻運算與設定
