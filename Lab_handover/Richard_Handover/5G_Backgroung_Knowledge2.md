@@ -20,7 +20,7 @@
 ---
 
 ## 2. FR1 頻段與 OAI 參數設定
-> **Reference:** [ShareTechnote - 5G FR Bandwidth](https://www.sharetechnote.com/html/5G/5G_FR_Bandwidth.html)
+> **Reference:** [ShareTechnote - 5G FR Bandwidth](https://www.sharetechnote.com/html/5G/image/38_101_1_Table_5_3_3_1_v17_6_0.png)
 
 <img width="773" height="163" alt="image" src="https://github.com/user-attachments/assets/cbdaeba6-ef20-473c-9b6b-750f00d56fe6" />
 
@@ -49,7 +49,7 @@ sudo ./nr-uesoftmodem -r 106 --numerology 1 --band 78 -C 3619200000 --uicc0.imsi
 #### 實務測試紀錄
 - G Reigns 基站與 RU 配置：G Reigns 基地台使用 n48 頻段。原先連接的 Foxconn RU 因缺乏 n48 的韌體而不支援該頻段，因此實務上必須替換為 Pegatron RU。
 
-- 安全性測試 (6/29)：掃描到一個作為 UE 的 Pegatron dongle，並成功對其進行攻擊，導致該 dongle 無法連線。
+- 在 6/29 的交接中，掃描到一個 UE 並且得知此 UE 為 **Pegatron dongle**，並成功對其進行攻擊，導致該 dongle 無法連線。
 
 - 鎖頻策略：在攻擊端 (Attacker) 設定鎖頻，是為了確保 MTK UE 能穩定鎖定在我們自建的基地台上。
 
@@ -57,23 +57,30 @@ sudo ./nr-uesoftmodem -r 106 --numerology 1 --band 78 -C 3619200000 --uicc0.imsi
 在針對特定目標進行設定時，需計算並指定準確的下行頻率 (Downlink Frequency)。
 
 #### 測試場景設定
-- Band:  n78
-- Bandwidth: 40 MHz
-- SCS: 30 kHz (106 PRBs)
-- downlink_frequency = 3619200000;      # 3619.2 MHz
-- absoluteFrequencySSB = 641280;        # SSB ARFCN (GSCN = 7929)
+```
+Band:  n78
+Bandwidth: 40 MHz
+SCS: 30 kHz (106 PRBs)
+downlink_frequency = 3619200000;      # 3619.2 MHz
+absoluteFrequencySSB = 641280;        # SSB ARFCN (GSCN = 7929)
+```
 
 轉換過程如下
 
  <img width="639" height="519" alt="image" src="https://github.com/user-attachments/assets/1a447205-4ce5-41cf-87ab-59c9f155ba64" />
  
-- 因此，攻擊端 (Attacker) 的指令需要鎖定在該頻率：
+- 因此，攻擊端 (Attacker) 的指令需要鎖定在該頻率(中心頻)：
 
 ```
 -C 3619200000
 ```
 
 ### 5. SSB Offset 計算
+
+計算過程如下圖所示：
+
+<img width="1028" height="466" alt="image" src="https://github.com/user-attachments/assets/ce9df310-5296-40c9-87f7-7a1eac076516" />
+
 `ssb_offset` 實際上是指 SSB 相對於中心頻率 (Center Frequency) 的位移量。
 可透過 `get_ssb_offset_to_pointA` 來了解。
 
@@ -83,7 +90,7 @@ sudo ./nr-uesoftmodem -r 106 --numerology 1 --band 78 -C 3619200000 --uicc0.imsi
 
 根據上圖推算：
 
-ssb = 12 * 86 / 2 = 516
+ssb_offset = 12 * 86 / 2 = 516
 
 因此在指令中需要加上參數：
 
@@ -95,6 +102,6 @@ ssb = 12 * 86 / 2 = 516
 
 Nemo 工具可以幫助我們檢視周遭網路環境。
 
-- 功能：透過在三星 (Samsung) 手機內安裝此分析軟體，可以直接讀取掃描到的 SIB1 訊息，並查看基地台的詳細資訊。
+- 功能：透過在三星 (Samsung) 手機內安裝分析軟體，可以直接讀取掃描到的 SIB1 訊息，並查看基地台的詳細資訊。
 
 - 攻擊條件限制：理論上，所有的基地台都可以作為攻擊目標。但實務上，由於 USRP 發射的訊號功率有限，若基地台距離太遠會導致無法接收訊號。因此，成功的先決條件是目標基地台的接收增益 (RX Gain) 必須夠大。
