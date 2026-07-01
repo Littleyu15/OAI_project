@@ -60,7 +60,7 @@ python main.py --apply --today --ensure-comments --seed-from-commits
 
 | 日期 | 主要工作 | 預估工時 | 補充工作 / 緩衝 | 截止日期 | 預期產出 |
 |---|---|---:|---|---|---|
-| 7/1（三） | 完成 OAI 建置以及 Log 筆記 | 6h |  | 7/1 | `oai_user_guide.md` |
+| 7/1（三） | 完成 OAI 建置以及 Log 筆記 | 6h | 能夠做出完整E2E user guide筆記以及Log說明 | 7/1 | `oai_user_guide.md` |
 | 7/2（四） | 執行 DGX spark 安裝與 Container 環境設定測試 | 7h | 解決 Container 啟動時的掛載問題，保存 command 與 log | 7/2 | `dgx-spark-installation-log.md` |
 | 7/3（五） | 週檢查點：撰寫 DGX spark 學習筆記並確認環境可穩定運行 | 6h | 補齊截圖與執行 evidence，盤點下週重現實驗的檔案 | 7/3 | `dgx-spark-study-notes.md`, `week1-checkpoint.md` |
 
