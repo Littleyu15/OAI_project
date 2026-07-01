@@ -35,6 +35,9 @@ sudo ./nr-uesoftmodem -r 106 --numerology 1 --band 78 -C 3619200000 --uicc0.imsi
 - `--numerology 1`: 通常使用30kHz
 - `--band 78`: 指定使用 n78 頻段。
 
+`--numerology 1`式子
+<img width="247" height="159" alt="image" src="https://github.com/user-attachments/assets/127b1e59-29c3-4b16-8bf5-53000988699d" />
+
 
 ### 常見頻段比較表
 |頻段	|雙工模式|	ƒ（MHz）|	別名|	子集頻段|	上行（MHz）	|下行（MHz）|	雙工間隔（MHz）	|頻道頻寬（MHz）|
