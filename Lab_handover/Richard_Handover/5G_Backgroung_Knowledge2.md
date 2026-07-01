@@ -9,7 +9,7 @@
 4. [鎖頻運算與設定](#4-鎖頻運算與設定)
 5. [SSB Offset 計算](#5-ssb-offset-計算)
 6. [Nemo UE 與訊號測試](#6-nemo-ue-與訊號測試)
-7. [Attacker流程說明](#6-attacker流程說明)
+7. [Attacker流程說明](#7-attacker流程說明)
 
 ---
 
