@@ -26,12 +26,13 @@
 <img width="773" height="163" alt="image" src="https://github.com/user-attachments/assets/cbdaeba6-ef20-473c-9b6b-750f00d56fe6" />
 
 5G 實務上常用的頻寬為 **40 MHz / 100 MHz**。
+
 在 OAI 環境中，啟動 UE 的指令設定如下：
 
 ```bash
 sudo ./nr-uesoftmodem -r 106 --numerology 1 --band 78 -C 3619200000 --uicc0.imsi 001010000000001 --rfsim --rfsimulator.serveraddr 127.0.0.1
 ```
-
+其中
 - `-r`: Number of Resource Block
 - `--numerology 1`: 通常使用30kHz
 - `--band 78`: 指定使用 n78 頻段。
@@ -51,7 +52,7 @@ sudo ./nr-uesoftmodem -r 106 --numerology 1 --band 78 -C 3619200000 --uicc0.imsi
 - n78 頻段：目前台灣主流的 5G 頻段包含 n78 與 n79，因此市面上大多數設備皆可接收此 5G 訊號。
 - n48 頻段 (CBRS)：屬於美國的免費頻段。公民寬頻無線電服務 (CBRS) 是美國的一種頻寬共享系統，允許用戶使用 3550 - 3700 MHz 的頻段來部署 5G 專網 (Private Network)。
 
-#### 實務測試紀錄
+#### 預計測試討論
 - G Reigns 基站與 RU 配置：G Reigns 基地台使用 n48 頻段。原先連接的 Foxconn RU 因缺乏 n48 的韌體而不支援該頻段，因此實務上必須替換為 Pegatron RU。
 
 - 在 6/29 的交接中，因使用n78頻段，於是掃描到一個 UE 連線並且得知此 UE 為 **Pegatron dongle**，並成功對其進行攻擊，導致該 dongle 無法連線。
@@ -78,7 +79,6 @@ absoluteFrequencySSB = 641280;        # SSB ARFCN (GSCN = 7929)
 ```
 -C 3619200000
 ```
-
 
 ### 5. SSB Offset 計算
 
@@ -144,4 +144,5 @@ absoluteFrequencySSB = 621312;        # SSB ARFCN
 - Attacker無法攻擊到基站(因為中心頻設置在3619200000)
 
 #### 可新增
-- Attacker外掛上Nemo UE，自動掃描ssb，並自動更新中心頻，能夠達成有效攻擊
+- Attacker外掛上Nemo UE，自動掃描ssb，並自動更新中心頻，達成持續攻擊的結果
+
