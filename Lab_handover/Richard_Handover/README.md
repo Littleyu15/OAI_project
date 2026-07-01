@@ -33,8 +33,7 @@ Instead, the responsible incoming student should first understand the research f
 | Research Contribution | Related Slide / Figure / Table | Expected Evidence |
 |---|---|---|
 | MSG1 Jamming | Jamming Performance Plot | Successful interruption of RACH (Attack success rate / UE connection status) |
-| OAI gNB build | Adapter Log Trace | Correct parameter adjustment (Run success) |
-| O1 Adapter build | Adapter Log Trace | Correct parameter adjustment (Run success) |
+| SMO rApp| Mitihation Method| Successful Defense of RACH |
 
 ---
 
@@ -44,8 +43,8 @@ Reproduce every experimental result presented in the final defense slides.
 | Slide / Figure / Table | Expected Result | Reproduced Result | Evidence | Status |
 |---|---|---|---|---|
 | User Guide | user guide of building E2E  | |  | ☐ Pass ☐ Fail ☐ Blocked |
-| attacker build successfully| Successfully build and running attacker | | [MSG1 Attacker Manual](https://github.com/Littleyu15/OAI_project/blob/main/Lab_handover/Richard_Handover/MSG1_Attacker_Manual.md) | ☐ Pass ☐ Fail ☐ Blocked|
-| gNB build successfully| Successfully build and running gNB | | [OAI gNB Manual](https://github.com/Littleyu15/OAI_project/blob/main/Lab_handover/Richard_Handover/OAI_gNB_Manual.md) | ☐ Pass ☐ Fail ☐ Blocked |
+| Attacker Manual| Successfully build and running attacker | | [MSG1 Attacker Manual](https://github.com/Littleyu15/OAI_project/blob/main/Lab_handover/Richard_Handover/MSG1_Attacker_Manual.md) | ☐ Pass ☐ Fail ☐ Blocked|
+| gNB Manual| Successfully build and running gNB | | [OAI gNB Manual](https://github.com/Littleyu15/OAI_project/blob/main/Lab_handover/Richard_Handover/OAI_gNB_Manual.md) | ☐ Pass ☐ Fail ☐ Blocked |
 | Adapter Connected | Successfully Connect to O1 | | [OAI O1 Adapter Manual](https://github.com/Littleyu15/OAI_project/blob/main/Lab_handover/Richard_Handover/O1_Adapter_Manual.md) | ☐ Pass ☐ Fail ☐ Blocked |
 | Adapter Log Trace | Correct parameter adjustment (O1 Adapter) | | [OAI O1 Adapter Manual](https://github.com/Littleyu15/OAI_project/blob/main/Lab_handover/Richard_Handover/O1_Adapter_Manual.md) | ☐ Pass ☐ Fail ☐ Blocked |
 
