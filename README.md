@@ -187,7 +187,7 @@ python main.py --apply --today --ensure-comments --seed-from-commits
 | 7/27（一） | 閱讀 DURANTA 系統架構相關文獻 | 6h | 釐清其在 5G OAI 系統中的定位 | 7/27 | `duranta-architecture-notes.md` |
 | 7/28（二） | 閱讀 O-CU-DU 架構設計，並比對 DURANTA 差異 | 6h | 整理 OAI 與兩者的整合優劣與特徵 | 7/28 | `o-cu-du-study-notes.md` |
 | 7/29（三） | 製作 OAI、DURANTA 與 O-CU-DU 的總和比較表 | 7h | 針對擴充性、效能、對接容易度進行評估 | 7/29 | `oai-duranta-ocudu-comparison.md` |
-| 7/30（四） | 收斂 7 月所有實驗日誌（DGX, Richard, HTC, Channel Model） | 6h | 確認所有超連結有效、檢查 evidence 是否齊全 | 7/30 | `month-7-open-issues.md` |
+| 7/30（四） | 收斂 7 月所有實驗日誌（OAI, Richard, HTC, Channel Model） | 6h | 確認所有超連結有效、檢查 evidence 是否齊全 | 7/30 | `month-7-open-issues.md` |
 | 7/31（五） | 月檢查點：產出 7 月總結報告，並規劃下一步計畫 | 6h | 完成 handover guide 基礎準備 | 7/31 | `month-7-summary.md`, `week5-checkpoint.md` |
 
 ## 本週產出與百分比
