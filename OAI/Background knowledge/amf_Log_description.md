@@ -64,7 +64,18 @@
 > [2026-06-25 08:44:27.872] [amf_app] [debug] Set a timer to the next Heart-beat (10)
 > ```
 
+#### 說明
+```
+Send HTTP message to http://oai-nrf:8080/nnrf-nfm/v1/nf-instances/2d504252-5ab5-4289-a6bb-e1c05b5b6bd6
+# AMF 正在向 NRF 發送 HTTP PATCH 請求，告訴 NRF 自己這個網路功能 (NF) 實例的最新狀態。
 
+HTTP message Body: [{"op":"replace","path":"/nfStatus","value":"REGISTERED"}]
+# 代表 AMF 成功在 NRF 上保持註冊狀態，讓核心網的其他元件（如 SMF）需要時能透過 NRF 找到這個 AMF。
+
+Get response with HTTP code (204)
+# 收到 HTTP 204 (No Content) 是一個成功的回應，代表 NRF 已經接受了更新。接著 AMF 設定下一次心跳的計時器:
+Set a timer to the next Heart-beat (10)（每 10 秒觸發一次）。
+```
 
 ### gNB Log
 > ```
