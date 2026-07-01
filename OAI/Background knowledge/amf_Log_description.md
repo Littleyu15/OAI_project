@@ -57,7 +57,7 @@
 
 #### 說明
 ```
-此Log為斷線時狀態
+此Log為斷線時狀態，且能看到UE以及gNB都處在 Disconnected/DEREGISTERED 狀態
 
 [amf_sbi] [info] Send HTTP message to http://oai-nrf:8080/nnrf-nfm/v1/nf-instances/2d504252-5ab5-4289-a6bb-e1c05b5b6bd6
 # AMF 正在向 NRF 發送 HTTP PATCH 請求，告訴 NRF 自己這個網路功能 (NF) 實例的最新狀態。
