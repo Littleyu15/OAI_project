@@ -9,6 +9,7 @@
 4. [鎖頻運算與設定](#4-鎖頻運算與設定)
 5. [SSB Offset 計算](#5-ssb-offset-計算)
 6. [Nemo UE 與訊號測試](#6-nemo-ue-與訊號測試)
+7. [Attacker流程說明](#6-attacker流程說明)
 
 ---
 
@@ -36,6 +37,7 @@ sudo ./nr-uesoftmodem -r 106 --numerology 1 --band 78 -C 3619200000 --uicc0.imsi
 - `--band 78`: 指定使用 n78 頻段。
 
 `--numerology 1`式子
+
 <img width="247" height="159" alt="image" src="https://github.com/user-attachments/assets/127b1e59-29c3-4b16-8bf5-53000988699d" />
 
 
@@ -52,9 +54,9 @@ sudo ./nr-uesoftmodem -r 106 --numerology 1 --band 78 -C 3619200000 --uicc0.imsi
 #### 實務測試紀錄
 - G Reigns 基站與 RU 配置：G Reigns 基地台使用 n48 頻段。原先連接的 Foxconn RU 因缺乏 n48 的韌體而不支援該頻段，因此實務上必須替換為 Pegatron RU。
 
-- 在 6/29 的交接中，掃描到一個 UE 並且得知此 UE 為 **Pegatron dongle**，並成功對其進行攻擊，導致該 dongle 無法連線。
+- 在 6/29 的交接中，因使用n78頻段，於是掃描到一個 UE 連線並且得知此 UE 為 **Pegatron dongle**，並成功對其進行攻擊，導致該 dongle 無法連線。
 
-- 鎖頻策略：在攻擊端 (Attacker) 設定鎖頻，是為了確保 MTK UE 能穩定鎖定在我們自建的基地台上。
+- 鎖頻目的：在UE端設定鎖頻，是為了確保 MTK UE 能穩定鎖定在我們自建的基地台上。
 
 ### 4. 鎖頻運算與設定
 在針對特定目標進行設定時，需計算並指定準確的下行頻率 (Downlink Frequency)。
@@ -73,10 +75,10 @@ absoluteFrequencySSB = 641280;        # SSB ARFCN (GSCN = 7929)
  <img width="639" height="519" alt="image" src="https://github.com/user-attachments/assets/1a447205-4ce5-41cf-87ab-59c9f155ba64" />
  
 - 因此，攻擊端 (Attacker) 的指令需要鎖定在該頻率(中心頻)：
-
 ```
 -C 3619200000
 ```
+
 
 ### 5. SSB Offset 計算
 
@@ -88,6 +90,8 @@ absoluteFrequencySSB = 641280;        # SSB ARFCN (GSCN = 7929)
 可透過 `get_ssb_offset_to_pointA` 來了解。
 
 #### 計算範例
+
+(此為Log Print)
 
 <img width="786" height="611" alt="image" src="https://github.com/user-attachments/assets/8a3b8173-b25d-4d3a-96a6-01d4e2468b32" />
 
@@ -108,3 +112,36 @@ Nemo 工具可以幫助我們檢視周遭網路環境。
 - 功能：透過在三星 (Samsung) 手機內安裝分析軟體，可以直接讀取掃描到的 SIB1 訊息，並查看基地台的詳細資訊。
 
 - 攻擊條件限制：理論上，所有的基地台都可以作為攻擊目標。但實務上，由於 USRP 發射的訊號功率有限，若基地台距離太遠會導致無法接收訊號。因此，成功的先決條件是目標基地台的接收增益 (RX Gain) 必須夠大。
+
+
+### 7. Attacker流程說明
+
+在一開始的環境，gNB配置為
+```
+Band:  n78
+Bandwidth: 40 MHz
+SCS: 30 kHz (106 PRBs)
+downlink_frequency = 3619200000;      # 3619.2 MHz
+absoluteFrequencySSB = 641280;        # SSB ARFCN (GSCN = 7929)
+```
+- 因此UE鎖頻在641280(只為了鎖定在此基站)
+- Attacker指令必須在此中心頻
+```
+-C 3619200000
+```
+
+#### ☠️開始攻擊
+
+開始攻擊後，rApp端偵測到接收異常，於是重新配置gNB
+```
+Band:  n78
+Bandwidth: 40 MHz
+SCS: 30 kHz (106 PRBs)
+downlink_frequency = 3319680000;      # 3319.68 MHz (符合規定 3.3~3.8 GHz)
+absoluteFrequencySSB = 621312;        # SSB ARFCN 
+```
+- UE重新鎖頻在621312(只為了鎖定在此基站)
+- Attacker無法攻擊到基站(因為中心頻設置在3619200000)
+
+#### 可新增
+- Attacker外掛上Nemo UE，自動掃描ssb，並自動更新中心頻，能夠達成有效攻擊
