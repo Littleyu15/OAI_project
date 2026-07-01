@@ -66,7 +66,6 @@
 Get response with HTTP code (204)
 # 收到 HTTP 204 (No Content) 是一個成功的回應，代表 NRF 已經接受了更新。
 
-
 [amf_app] [debug] Set a timer to the next Heart-beat (10)
 #  AMF 設定下一次心跳的計時器（每 10 秒觸發一次）。
 ```
