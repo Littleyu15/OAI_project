@@ -68,7 +68,7 @@ Band:  n78
 Bandwidth: 40 MHz
 SCS: 30 kHz (106 PRBs)
 downlink_frequency = 3619200000;      # 3619.2 MHz
-absoluteFrequencySSB = 641280;        # SSB ARFCN (GSCN = 7929)
+absoluteFrequencySSB = 641280;        # SSB ARFCN (GSCN = 7929)，OAI原生常用
 ```
 
 轉換過程如下
