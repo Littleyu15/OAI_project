@@ -143,6 +143,6 @@ absoluteFrequencySSB = 621312;        # SSB ARFCN
 - UE重新鎖頻在621312(只為了鎖定在此基站)
 - Attacker無法攻擊到基站(因為中心頻設置在3619200000)
 
-#### 可新增
-- Attacker外掛上Nemo UE，自動掃描ssb，並自動更新中心頻，達成持續攻擊的結果
+#### Future work
+- 防禦方面加強
 
