@@ -10,11 +10,11 @@ python main.py --apply --today --ensure-comments --seed-from-commits
 
 ## 總目標
 
-完成實驗基礎環境建置與進階網路攻擊及模型研究，包含：DGX spark安裝與筆記、重現 Richard 論文結果、完成 HTC Jamming attack、OAI NTN Channel Model 獨立抽離，以及 DURANTA 與 O-CU-DU 研究筆記，建立可交接與可驗證的技術文件。
+完成實驗基礎環境建置與進階網路攻擊及模型研究，包含：OAI 環境建置與Log筆記、重現 Richard 論文結果、完成 HTC Jamming attack、OAI NTN Channel Model 獨立抽離，以及 DURANTA 與 O-CU-DU 研究筆記，建立可交接與可驗證的技術文件。
 
 | 月份  | 月目標                                                                  | 月檢查點 |
 | --- | -------------------------------------------------------------------- | ---- |
-| 7 月 | 完成 OAI 環境建置、重現 Richard 實驗、HTC Jamming 攻擊設計、Channel Model 抽離及 DURANTA/O-CU-DU 研究 、 完成 DGX 環境建置 | 7/31 |
+| 7 月 | 完成 OAI 環境建置、重現 Richard 實驗、HTC Jamming 攻擊設計、Channel Model 抽離及 DURANTA/O-CU-DU 研究  | 7/31 |
 
 ---
 
@@ -22,7 +22,7 @@ python main.py --apply --today --ensure-comments --seed-from-commits
 
 | 週次    | 日期        | 週五檢查點 | 週里程碑                                                   | 預期總進度 |
 | ----- | --------- | ----- | ------------------------------------------------------ | ----: |
-| W1    | 7/1–7/3   | 7/3   | 完成 OAI/DGX spark 安裝、環境設定與學習筆記                               | 20%   |
+| W1    | 7/1–7/3   | 7/3   | 完成 OAI 安裝、環境設定與學習筆記                               | 20%   |
 | W2    | 7/6–7/10  | 7/10  | 研讀並重現 Richard 論文結果，產出對應實驗數據與比較分析                      | 40% |
 | W3    | 7/13–7/17 | 7/17  | 針對 HTC 基站完成 Jamming attack 的攻擊、封包擷取與驗證報告            | 60%  |
 | W4    | 7/20–7/24 | 7/24  | 完成 OAI NTN Channel Model 獨立抽離模組設計，並提交單元測試              | 80%  |
@@ -61,21 +61,19 @@ python main.py --apply --today --ensure-comments --seed-from-commits
 | 日期 | 主要工作 | 預估工時 | 補充工作 / 緩衝 | 截止日期 | 預期產出 |
 |---|---|---:|---|---|---|
 | 7/1（三） | 完成 OAI 建置以及 Log 筆記 | 6h | 能夠做出完整E2E user guide筆記以及Log說明 | 7/1 | `oai_user_guide.md` |
-| 7/2（四） | 執行 DGX spark 安裝與 Container 環境設定測試 | 7h | 解決 Container 啟動時的掛載問題，保存 command 與 log | 7/2 | `dgx-spark-installation-log.md` |
-| 7/3（五） | 週檢查點：撰寫 DGX spark 學習筆記並確認環境可穩定運行 | 6h | 補齊截圖與執行 evidence，盤點下週重現實驗的檔案 | 7/3 | `dgx-spark-study-notes.md`, `week1-checkpoint.md` |
+| 7/2（四） | 閱讀Richard論文code | 7h | 閱讀code怎麼改、改了甚麼 | 7/2 |  |
+| 7/3（五） | 週檢查點：撰寫學習筆記並確認環境可穩定運行 | 6h | 補齊截圖與執行 evidence，盤點下週重現實驗的檔案 | 7/3 |  `week1-checkpoint.md` |
 
 ## 本週產出與百分比
 
 | 產出 | 完成度 | 截止日期 |
 |---|---:|---|
 | `oai_user_guide.md` | 100% | 7/1 |
-| `dgx-spark-installation-log.md` | 100% | 7/2 |
-| `dgx-spark-study-notes.md` | 100% | 7/3 |
 | `week1-checkpoint.md` | 100% | 7/3 |
 
 ## 7/3 通過標準
-* **安裝日誌**：`dgx-spark-installation-log.md` 需包含完整的安裝指令、設定檔與啟動成功的 terminal output。
-* **學習筆記**：`dgx-spark-study-notes.md` 需紀錄操作流程與常見問題的 Trouble Shooting 方法。
+* **安裝日誌**：`oai_user_guide.md` 需包含完整的安裝指令、設定檔與啟動成功的 terminal output。
+
 
 ---
 
